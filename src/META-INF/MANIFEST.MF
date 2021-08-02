@@ -1,0 +1,18 @@
+Name: STATS NTILE ANALYSIS
+Dialog-Specs: STATS_NTILE_ANALYSIS.cfe
+Command-Specs: STATS_NTILE_ANALYSIS.xml
+Code-Files: STATS_NTILE_ANALYSIS.py
+Misc-Files: extsyntax.css,defaultdialogicon.png,LICENSE,markdown.html
+Summary: Tabulate the ntiles of predicted probabilities
+Description: This procedure tabulates the ntile statistics for a varia
+ ble holding predicted probabilities from a logistic regression or oth
+ er classification algorithm and produces charts of the distribution s
+ tatistics..
+Author: Jon K Peck
+Version: 1.0.0
+Product-Version: 27
+Date: 8/01/2021
+Product-Version-Maximum: 27
+Categories: classification, ntiles, logistic
+Plugins: Python
+Python-Version: 3

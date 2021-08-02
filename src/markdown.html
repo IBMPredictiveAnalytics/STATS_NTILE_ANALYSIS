@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=9" >
+
+<title>STATS NTILE ANALYSIS</title>
+
+<link rel="stylesheet" type="text/css" href="extsyntax.css" />
+
+</head>
+
+
+<body>
+
+<h1>STATS NTILE ANALYSIS Extension Command</h1>
+<div class="syntax">
+<p>Display statistics for the ntiles of a dataset of predicted problabilities and associated charts</p>
+
+<p>STATS NTILE ANALYSIS<br/>
+PREDPROB<sup>&#42;</sup> = predicted probabilities variable name<br/>
+DEPVAR<sup>&#42;</sup> = dependent variable from the analysis<br/>
+PREDVAL<sup>&#42;</sup> = predicted value to which the probabilities apply<br/>
+NTILES<sup>&#42;</sup> = number of ntiles for the table<br/>
+</p>
+<p>/CHARTS<br/>
+GAIN = NO<sup>&#42;&#42;</sup> or YES</em><br/>
+RESPONSERATE = NO<sup>&#42;&#42;</sup> or YES<br/>
+LIFT = NO<sup>&#42;&#42;</sup> or YES</p>
+</p>
+
+<p>/HELP</p>
+
+<p><sup>&#42;</sup> Required<br/>
+<sup>&#42;&#42;</sup> Default</p>
+</div>
+<p>STATS NTILE ANALYSIS /HELP prints this help and does nothing else.</p>
+
+<pre class="example"><code>
+STATS NTILE ANALYSIS PREDPROB = PredictedProbabilities_1 DEPVAR=credit_rating NTILES=10
+PREDVAL=1
+/CHARTS GAIN=YES RESPONSERATE=YES LIFT=YES
+</code></pre>
+
+<p>Note that variable names are case sensitive in this procedure and must match the case in the dataset.</p>
+<p><strong>PREDPROB</strong> specifies the variable containing the predicted probabilities.
+Often this would come from the estimation sample, but it could, alternatively, 
+come from another dataset now open that has been scored using the Sampling Wizard or another method.</p>
+
+<p><strong>DEPVAR</strong> is the dependent variable from the analysis that produced the predicted probabilities.
+</p>
+
+<p><strong>NTILES</strong> specifies the number of ntiles for the table.  The default is 10.</p>
+
+<p><strong>PREDVAL</strong> specifies the value to which the predicted probabilities apply and for which analysis is desired.  
+It can be either string or numeric. </p>
+<h2>CHARTS</h2>
+<p><strong>GAIN</strong> specifies whether or not to produce a gains chart showing the gain percentages by ntile</p>
+
+<p><strong>RESPONSERATE</strong> specifies whether or not to produce a response rate chart showing the response rates by ntile</p>
+
+<p><strong>LIFT</strong> specifies whether or not to produce a lift chart showing the lift by ntile</p>
+
+<h1>References</h1>
+<p>Kumar, Ridhima, The Lost Art of Decile Analysis - Data Science Central, 2021</p>
+
+<p>&copy; Copyright Jon K Peck, 2021</p>
+
+</body>
+
+</html>
+
