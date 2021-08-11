@@ -12,7 +12,6 @@ Author: Jon K Peck
 Version: 1.0.0
 Product-Version: 27
 Date: 8/01/2021
-Product-Version-Maximum: 27
 Categories: classification, ntiles, logistic
 Plugins: Python
 Python-Version: 3
