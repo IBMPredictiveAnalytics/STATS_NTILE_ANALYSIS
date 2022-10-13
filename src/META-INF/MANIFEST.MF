@@ -1,4 +1,5 @@
 Name: STATS NTILE ANALYSIS
+Display-Name: Ntile Analysis
 Dialog-Specs: STATS_NTILE_ANALYSIS.cfe
 Command-Specs: STATS_NTILE_ANALYSIS.xml
 Code-Files: STATS_NTILE_ANALYSIS.py
