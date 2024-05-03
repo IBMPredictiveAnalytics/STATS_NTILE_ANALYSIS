@@ -10,7 +10,7 @@ Description: This procedure tabulates the ntile statistics for a varia
  er classification algorithm and produces charts of the distribution s
  tatistics..
 Author: Jon K Peck
-Version: 1.0.0
+Version: 1.0.1
 Product-Version: 27
 Date: 8/01/2021
 Categories: classification, ntiles, logistic
